@@ -55,7 +55,7 @@ export default function Home() {
             Explore beautiful Inspiration from our Watch Collection
           </p>
 
-          <div className="text-xs md:text-base flex w-96 md:w-auto items-center justify-between max-w-5xl mx-auto my-10">
+          <div className="text-xs md:text-base flex w-80 md:w-auto items-center justify-between max-w-5xl mx-auto my-10">
             <p>All</p>
             <p>Casio</p>
             <p>Seiko</p>
@@ -69,7 +69,7 @@ export default function Home() {
 
         <section className="flex items-center gap-10 max-w-[90rem] mx-auto justify-center flex-wrap">
           <div className="border-2 border-[#AC702F] rounded-md w-80 text-start p-2">
-            <img src={casioCa} alt="" />
+            <img src={casioCa} alt="" className="mx-auto" />
             <div>
               <p className="text-lg font-semibold text-[#334155]">Casio</p>
               <p className="text-[#334155]">CA-500WE-1AEF</p>
@@ -104,7 +104,7 @@ export default function Home() {
           </div>
 
           <div className="border-2 border-[#AC702F] rounded-md w-80 text-start p-2">
-            <img src={rolexgmt} alt="" />
+            <img src={rolexgmt} alt="" className="mx-auto" />
             <div>
               <p className="text-lg font-semibold text-[#334155]">Rolex</p>
               <p className="text-[#334155]">GMT-MASTER II 126713GRNR</p>
@@ -139,7 +139,7 @@ export default function Home() {
           </div>
 
           <div className="border-2 border-[#AC702F] rounded-md w-80 text-start p-2">
-            <img src={rolex36mm} alt="" />
+            <img src={rolex36mm} alt="" className="mx-auto" />
             <div>
               <p className="text-lg font-semibold text-[#334155]">Rolex</p>
               <p className="text-[#334155]">36mm Stainless Steel</p>
@@ -174,7 +174,7 @@ export default function Home() {
           </div>
 
           <div className="border-2 border-[#AC702F] rounded-md w-80 text-start p-2">
-            <img src={mondaine} alt="" />
+            <img src={mondaine} alt="" className="mx-auto" />
             <div>
               <p className="text-lg font-semibold text-[#334155]">Mondaine</p>
               <p className="text-[#334155]">Classic 40mm Vegan Watch</p>
@@ -209,7 +209,7 @@ export default function Home() {
           </div>
 
           <div className="border-2 border-[#AC702F] rounded-md w-80 text-start p-2">
-            <img src={ligure} alt="" />
+            <img src={ligure} alt="" className="mx-auto" />
             <div>
               <p className="text-lg font-semibold text-[#334155]">Ligure</p>
               <p className="text-[#334155]">LWT23001N</p>
@@ -245,7 +245,7 @@ export default function Home() {
           </div>
 
           <div className="border-2 border-[#AC702F] rounded-md w-80 text-start p-2">
-            <img src={certina} alt="" />
+            <img src={certina} alt="" className="mx-auto" />
             <div>
               <p className="text-lg font-semibold text-[#334155]">Certina</p>
               <p className="text-[#334155]">DS Action C0329291104100</p>
@@ -280,7 +280,7 @@ export default function Home() {
           </div>
 
           <div className="border-2 border-[#AC702F] rounded-md w-80 text-start p-2">
-            <img src={timex} alt="" />
+            <img src={timex} alt="" className="mx-auto" />
             <div>
               <p className="text-lg font-semibold text-[#334155]">Timex</p>
               <p className="text-[#334155]">TW2W21200 Celestial Automatic</p>
@@ -315,7 +315,7 @@ export default function Home() {
           </div>
 
           <div className="border-2 border-[#AC702F] rounded-md w-80 text-start p-2">
-            <img src={seiko} alt="" />
+            <img src={seiko} alt="" className="mx-auto" />
             <div>
               <p className="text-lg font-semibold text-[#334155]">Seiko</p>
               <p className="text-[#334155]">SWR054P1 Selection Nano Watch</p>
@@ -350,7 +350,7 @@ export default function Home() {
           </div>
 
           <div className="border-2 border-[#AC702F] rounded-md w-80 text-start p-2">
-            <img src={balmianb3} alt="" />
+            <img src={balmianb3} alt="" className="mx-auto" />
             <div>
               <p className="text-lg font-semibold text-[#334155]">Balmian</p>
               <p className="text-[#334155]">B3912.39.82</p>
@@ -385,7 +385,7 @@ export default function Home() {
           </div>
 
           <div className="border-2 border-[#AC702F] rounded-md w-80 text-start p-2">
-            <img src={casiomtp} alt="" />
+            <img src={casiomtp} alt="" className="mx-auto" />
             <div>
               <p className="text-lg font-semibold text-[#334155]">Casio</p>
               <p className="text-[#334155]">MTP-1302PD-3AVEF</p>
@@ -420,7 +420,7 @@ export default function Home() {
           </div>
 
           <div className="border-2 border-[#AC702F] rounded-md w-80 text-start p-2">
-            <img src={casiomw} alt="" />
+            <img src={casiomw} alt="" className="mx-auto" />
             <div>
               <p className="text-lg font-semibold text-[#334155]">Casio</p>
               <p className="text-[#334155]">MW-240-1EVEF</p>
@@ -455,7 +455,7 @@ export default function Home() {
           </div>
 
           <div className="border-2 border-[#AC702F] rounded-md w-80 text-start p-2">
-            <img src={garonne} alt="" />
+            <img src={garonne} alt="" className="mx-auto" />
             <div>
               <p className="text-lg font-semibold text-[#334155]">Garonne</p>
               <p className="text-[#334155]">KQ29Q475</p>
@@ -490,7 +490,7 @@ export default function Home() {
           </div>
 
           <div className="border-2 border-[#AC702F] rounded-md w-80 text-start p-2">
-            <img src={balmainla} alt="" />
+            <img src={balmainla} alt="" className="mx-auto" />
             <div>
               <p className="text-lg font-semibold text-[#334155]">Balmain</p>
               <p className="text-[#334155]">LA-20WH-2AEF</p>
@@ -525,7 +525,7 @@ export default function Home() {
           </div>
 
           <div className="border-2 border-[#AC702F] rounded-md w-80 text-start p-2">
-            <img src={lorus} alt="" />
+            <img src={lorus} alt="" className="mx-auto" />
             <div>
               <p className="text-lg font-semibold text-[#334155]">Lorus</p>
               <p className="text-[#334155]">Sport RRX09HX9</p>
@@ -560,7 +560,7 @@ export default function Home() {
           </div>
 
           <div className="border-2 border-[#AC702F] rounded-md w-80 text-start p-2">
-            <img src={iceWatch} alt="" />
+            <img src={iceWatch} alt="" className="mx-auto" />
             <div>
               <p className="text-lg font-semibold text-[#334155]">Ice Watch</p>
               <p className="text-[#334155]">022801 ICE</p>
@@ -595,7 +595,7 @@ export default function Home() {
           </div>
 
           <div className="border-2 border-[#AC702F] rounded-md w-80 text-start p-2">
-            <img src={calypso} alt="" />
+            <img src={calypso} alt="" className="mx-auto" />
             <div>
               <p className="text-lg font-semibold text-[#334155]">Calypso</p>
               <p className="text-[#334155]">Junior 10-15 K5801/4</p>

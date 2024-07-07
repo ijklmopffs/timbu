@@ -7,7 +7,9 @@ export default function Navbar() {
     <nav className="flex items-center justify-between p-4">
       <div className="flex items-center gap-4">
         <div>
-          <img src={logo} alt="" />
+          <Link to="/">
+            <img src={logo} alt="" />
+          </Link>
         </div>
         <div className="hidden md:flex items-center gap-4">
           <Link to="/">Brand</Link>
