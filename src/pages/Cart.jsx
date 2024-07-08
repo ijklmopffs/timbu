@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import casio from "../assets/casio-cart.png";
@@ -82,9 +83,11 @@ export default function Cart() {
             </div>
           </div>
 
-          <button className="bg-[#AC702F] px-12 py-4 text-white rounded-full w-full">
-            Proceed to Checkout
-          </button>
+          <Link to="/checkout">
+            <button className="bg-[#AC702F] px-12 py-4 text-white rounded-full w-full">
+              Proceed to Checkout
+            </button>
+          </Link>
         </div>
       </section>
 
