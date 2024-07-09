@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/jtlogo.svg";
 import hamburger from "../assets/hamburger.svg";
+import iconDown from "../assets/chevron-down.svg";
 
-export default function Navbar() {
+export default function Navbar({ onButtonClick, onLinkClick }) {
   return (
     <nav className="flex items-center justify-between p-4">
       <div className="flex items-center gap-4">
@@ -12,9 +13,25 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="hidden md:flex items-center gap-4">
-          <Link to="/">Brand</Link>
-          <Link to="/">Inspiration</Link>
-          <Link to="/">Categories</Link>
+          <Link
+            to="/"
+            onClick={onButtonClick}
+            className="flex items-center gap-2"
+          >
+            Brand
+            <img src={iconDown} alt="" />
+          </Link>
+          <Link to="/" className="text-[#AC702F]">
+            Inspiration
+          </Link>
+          <Link
+            to="/"
+            onClick={onLinkClick}
+            className="flex items-center gap-2"
+          >
+            Categories
+            <img src={iconDown} alt="" />
+          </Link>
           <Link to="/">Sales</Link>
         </div>
       </div>

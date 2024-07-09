@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import cartIcon from "../assets/cartIcon.svg";
@@ -22,20 +23,41 @@ import calypso from "../assets/calypso.png";
 import star from "../assets/star.png";
 import increaseIcon from "../assets/increase.png";
 import Footer from "../components/Footer";
+import BrandModal from "../components/BrandModal";
+import CategoriesModal from "../components/CategoriesModal";
 
 export default function Home() {
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [categoriesModal, setCategoriesModal] = useState(false);
+
+  const toggleModal = () => {
+    setModalOpen(!isModalOpen);
+  };
+
+  const toggleCategoryModal = () => {
+    setCategoriesModal(!categoriesModal);
+  };
+
   return (
     <main className="bg-[#FBFBFB]">
-      <Navbar />
+      <Navbar onButtonClick={toggleModal} onLinkClick={toggleCategoryModal} />
+
+      {isModalOpen && <BrandModal onClose={toggleModal} />}
+      {categoriesModal && <CategoriesModal onClose={toggleCategoryModal} />}
 
       <section className="mt-28">
-        <Link
-          to="/cart"
-          className="flex items-center gap-2 flex-end justify-end text-[#334155] p-4"
-        >
-          <img src={cartIcon} alt="" className="w-8 h-8" />
-          Cart
-        </Link>
+        <div className="relative">
+          <Link
+            to="/cart"
+            className="flex items-center gap-2 flex-end justify-end text-[#334155] p-4 relative"
+          >
+            <p className="bg-[#ff0000] rounded-[50%] text-white px-2 py-1 absolute right-20 bottom-7">
+              2
+            </p>
+            <img src={cartIcon} alt="" className="w-8 h-8" />
+            Cart
+          </Link>
+        </div>
 
         <div className="my-5">
           <img src={bgImg} alt="" className="hidden md:block" />
@@ -56,7 +78,9 @@ export default function Home() {
           </p>
 
           <div className="text-xs md:text-base flex w-80 md:w-auto items-center justify-between max-w-5xl mx-auto my-10">
-            <p>All</p>
+            <p className="border-2 rounded-md border-[#0F172A] px-3 py-1">
+              All
+            </p>
             <p>Casio</p>
             <p>Seiko</p>
             <p>Rolex</p>
