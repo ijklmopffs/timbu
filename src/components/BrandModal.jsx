@@ -6,17 +6,17 @@ const BrandModal = ({ onClose }) => {
   };
 
   return (
-    <div className="fixed md:left-40 lg:left-80 flex items-center justify-center z-50">
+    <div className="absolute top-12 md:top-0 md:fixed right-0 w-60 md:w-auto md:left-40 lg:left-80 flex items-center justify-center z-50">
       <div
         className="fixed inset-0 bg-black bg-opacity-50"
         onClick={handleOverlayClick}
       ></div>
-      <div className="bg-white p-6 rounded shadow-lg z-10 flex justify-between gap-40">
+      <div className="bg-white p-6 rounded shadow-lg z-10 flex flex-col md:flex-row justify-between gap-10 md:gap-40">
         <div>
-          <h2 className="font-semibold text-[#0F172A] text-start">
+          <h2 className="font-semibold text-[#0F172A] text-end md:text-start">
             Luxury Brands
           </h2>
-          <ul className="list-disc list-inside text-start">
+          <ul className="md:list-disc list-inside text-end md:text-start">
             <li>Montblanc</li>
             <li>Baume & Mercier</li>
             <li>Oris</li>
@@ -37,10 +37,10 @@ const BrandModal = ({ onClose }) => {
           </ul>
         </div>
         <div>
-          <h2 className="font-semibold text-[#0F172A] text-start">
+          <h2 className="font-semibold text-[#0F172A] text-end md:text-start">
             Designer Watch Brands
           </h2>
-          <ul className="list-disc list-inside text-start">
+          <ul className="md:list-disc list-inside text-end md:text-start">
             <li>Vivienne Westwood</li>
             <li>Versace</li>
             <li>Casio</li>
@@ -60,10 +60,10 @@ const BrandModal = ({ onClose }) => {
           </ul>
         </div>
         <div>
-          <h2 className="font-semibold text-[#0F172A] text-start">
+          <h2 className="font-semibold text-[#0F172A] text-end md:text-start">
             Luxury Jewellery
           </h2>
-          <ul className="list-disc list-inside text-start">
+          <ul className="md:list-disc list-inside text-end md:text-start">
             <li>Ambush</li>
             <li>Balenciaga</li>
             <li>Common Lines</li>

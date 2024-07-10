@@ -77,7 +77,7 @@ export default function Home() {
             Explore beautiful Inspiration from our Watch Collection
           </p>
 
-          <div className="text-xs md:text-base flex w-80 md:w-auto items-center justify-between max-w-5xl mx-auto my-10">
+          <div className="text-xs md:text-base flex w-96 md:w-auto items-center justify-between max-w-5xl mx-auto my-10">
             <p className="border-2 rounded-md border-[#0F172A] px-3 py-1">
               All
             </p>

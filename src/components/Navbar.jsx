@@ -2,8 +2,16 @@ import { Link } from "react-router-dom";
 import logo from "../assets/jtlogo.svg";
 import hamburger from "../assets/hamburger.svg";
 import iconDown from "../assets/chevron-down.svg";
+import { useState } from "react";
+import MobileNav from "./MobileNav";
 
 export default function Navbar({ onButtonClick, onLinkClick }) {
+  const [nav, setNav] = useState(false);
+
+  const handleNav = () => {
+    setNav((prevNav) => !nav);
+  };
+
   return (
     <nav className="flex items-center justify-between p-4">
       <div className="flex items-center gap-4">
@@ -43,7 +51,10 @@ export default function Navbar({ onButtonClick, onLinkClick }) {
         />
       </div>
       <div className="md:hidden">
-        <img src={hamburger} alt="" />
+        <button onClick={handleNav}>
+          <img src={hamburger} alt="" />
+        </button>
+        {nav && <MobileNav onClose={handleNav} />}
       </div>
     </nav>
   );
